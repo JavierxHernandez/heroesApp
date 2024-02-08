@@ -1,0 +1,14 @@
+<h2 mat-dialog-title>Borrar Héroe</h2>
+<mat-dialog-content>
+  Estas seguro que quieres borrar a {{ data.superhero | titlecase }}?
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button
+    mat-flat-button
+    color="primary"
+    (click)="onNoClick()">Cancelar</button>
+  <span class="spacer"></span>
+  <button
+    mat-flat-button
+    (click)="onConfirm()" >Confirmar</button>
+</mat-dialog-actions>
